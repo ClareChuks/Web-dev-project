@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-header {
+    background-color: #1d2a35;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #04aa6d;
+}
+
+.logo span {
+    color: white;
+}
+
+.main-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.signin {
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer
+}
+
+.launguages {
+    background-color: #282a35;
+    list-style: none;
+    display: flex;
+    color: white;
+    border: none;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 15px;
+    padding: 0;
+    margin: 0;   
+}
+
+.launguages a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.hero {
+    font-size: 48px;
+    background-color: #282a35;
+    color: white;
+}
+
+.hero input {
+    background-color: white;
+    margin-top: 20px;
+    padding: 12px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 25px;
+    border: none;
+}
+
+.html-section {
+    background-color: #d9eee1;
+    padding: 80px 20px;
+}
+
+.html-section h2 {
+    font-size: 60px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn green {
+    background-color: #04aa6d;
+    color: white;
+}
+
+.btn yellow { 
+    background-color: #fff4a3;
+    color: #282a35;
+}
+
+.btn darkblue {
+    background-color: #282a35;
+    color: white;
+}
+
+.btn pink {
+    background-color: #ffc0c7;
+    color: #282a35  ;
+}
+
+.example {
+    background-color: f3f3f3;
+    padding: 40px 20px;
+}
+
+pre {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow-x: auto;
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+}
+.parent {
+  display: flex;
+  background-color: green;
+  height: 100vh;
+  width: 100%;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  background-color: red;
+  height: 200px;
+  width: 33.3%;
+}
+
+.two {
+  background-color: blue;
+  height: 200px;
+  width: 33.3%;
+}
+
+.three {
+  background-color: yellow;
+  height: 200px;
+  width: 33.3%;
+}
