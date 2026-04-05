@@ -687,6 +687,7 @@ small {
 .hamburger {
   flex-direction: column;
   cursor: pointer;
+  font-size: 18px;
   margin-right: 25px;
   color: #FDC134;
   background-color: transparent;
