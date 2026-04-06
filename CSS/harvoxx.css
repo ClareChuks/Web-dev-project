@@ -169,7 +169,6 @@ p {
 .about {
   width: 80%;
   background-color: white;
-  height: 80vh;
   margin: auto;
   margin-top: 15%;
   display: flex;
@@ -302,7 +301,7 @@ p {
   text-align: center;
 }
 
-service-container img {
+.service-container img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -357,7 +356,7 @@ service-container img {
   justify-content: left;
 }
 .card span {
-  color: orange;
+  color: #FDC134
 }
 
 small {
@@ -654,7 +653,7 @@ small {
     }
 
     .subscribe-container button {
-      background: #f4b400; /* yellow/orange button */
+      background: #f4b400;
       border: none;
       padding: 0 25px;
       font-size: 16px;
@@ -732,7 +731,6 @@ p {
 .about {
   flex-direction: column;
   gap: 20px;
-  height: auto;
   margin-top: 10%;
   overflow: auo;
 }
