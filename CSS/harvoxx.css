@@ -169,6 +169,7 @@ p {
 .about {
   width: 80%;
   background-color: white;
+  height: 100vh;
   margin: auto;
   margin-top: 15%;
   display: flex;
