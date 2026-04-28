@@ -663,7 +663,7 @@ small {
     }
 
     .subscribe-container button {
-      background: #f4b400; /* yellow/orange button */
+      background: #f4b400;
       border: none;
       padding: 0 25px;
       font-size: 16px;
