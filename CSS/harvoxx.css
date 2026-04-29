@@ -86,6 +86,49 @@ nav {
   transition: 0.5s;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #213b52;
+    flex-direction: column;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+
 .hero {
   display: flex;
   gap: 6%;
@@ -452,15 +495,6 @@ small {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
-  .site-footer .footer-content {
-    grid-template-columns: 1fr;
-  }
-  .info-box {
-    order: 2;
-  }
-}
-
 #contact {
   padding: 70px 5%;
   background: #eef1f5;
@@ -628,17 +662,17 @@ small {
   font-size: 5vh;
   margin-top: 30px;
   justify-self: center;
-  color: white
+  color: white;
   font-family: "poppins", sans-serif;
 }
 
 .site-footer p {
   text-align: center;
   color: white;
-  font-style: italic;s
+  font-style: italic;
 }
 
-.suscribe {
+.subscribe {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -681,4 +715,182 @@ small {
   font-style: bold;
   margin-top: 6%;
   margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+ 
+  /* --- NAVBAR --- */
+  .logo h2 {
+    margin-left: 20px;
+  }
+ 
+  .hamburger {
+    display: flex;
+    margin-right: 20px;
+  }
+ 
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #213b52;
+    flex-direction: column;
+    transform: translateY(-110%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 999;
+  }
+ 
+  #menu-toggle:checked ~ .nav-links {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+ 
+  .nav-links ul {
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+    padding: 10px 0;
+    text-align: center;
+    margin-right: 0;
+  }
+ 
+  .get-started {
+    display: block;
+    text-align: center;
+    margin: 0 auto 20px;
+    width: fit-content;
+  }
+ 
+  .hero {
+    flex-direction: column-reverse;
+    margin-left: 0;
+    margin-top: 40px;
+    padding: 0 20px;
+    gap: 30px;
+  }
+ 
+  .hero-content {
+    width: 100%;
+  }
+ 
+  h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+ 
+  .img1 {
+    width: 100%;
+  }
+ 
+  .img11 {
+    width: 100%;
+  }
+ 
+  .s2 {
+    height: auto;
+    padding-bottom: 40px;
+  }
+ 
+  .about {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin-top: 40px;
+    gap: 20px;
+  }
+ 
+  .img2 {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+ 
+  .img22 {
+    height: 300px;
+  }
+ 
+  .about-content {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+ 
+  .a1 h2 {
+    font-size: 22px;
+  }
+ 
+  .a1 p {
+    font-size: 15px;
+  }
+ 
+  .a2 {
+    height: auto;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+  }
+ 
+  .txt1, .txt2, .txt3, .txt4 {
+    width: 100%;
+    height: auto;
+  }
+ 
+  .icon-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+ 
+  .icon-box i {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+ 
+  /* --- SERVICES --- */
+  .services-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+ 
+  .box {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+ 
+  /* --- CONTACT --- */
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+ 
+  .info-row {
+    grid-template-columns: 1fr;
+  }
+ 
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+ 
+  .site-footer {
+    height: auto;
+    padding-bottom: 40px;
+  }
+ 
+  .site-footer .footer-content {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+ 
+  .subscribe-container {
+    width: 90%;
+  }
+ 
+  .site-footer .copyright {
+    margin-left: 5%;
+    text-align: center;
+  }
 }
